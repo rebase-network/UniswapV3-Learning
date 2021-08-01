@@ -1,6 +1,7 @@
 # build output
 dist
 .DS_Store
+.idea
 
 # Logs
 logs
