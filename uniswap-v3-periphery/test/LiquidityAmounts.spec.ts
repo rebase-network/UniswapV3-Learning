@@ -205,15 +205,25 @@ describe('LiquidityAmounts', async () => {
     })
 
     it('amounts for price on upper boundary', async () => {
-      const sqrtPriceAX96 = encodePriceSqrt(0.00020024
+      // const sqrtPriceAX96 = encodePriceSqrt(0.00020024
+      //     , 1)
+      // const sqrtPriceBX96 = encodePriceSqrt(0.00066479, 1)
+      // const sqrtPriceX96 = encodePriceSqrt(0.000472206, 1)
+      // const { amount0, amount1 } = await liquidityFromAmounts.getAmountsForLiquidity(
+      //   sqrtPriceX96,
+      //   sqrtPriceAX96,
+      //   sqrtPriceBX96,
+      //     96897559109753
+      // )
+      const sqrtPriceAX96 = encodePriceSqrt(3999.8, 1)
+      const sqrtPriceBX96 = encodePriceSqrt(4509.7, 1)
+      const sqrtPriceX96 = encodePriceSqrt(2525.4
           , 1)
-      const sqrtPriceBX96 = encodePriceSqrt(0.00066479, 1)
-      const sqrtPriceX96 = encodePriceSqrt(0.000472206, 1)
       const { amount0, amount1 } = await liquidityFromAmounts.getAmountsForLiquidity(
         sqrtPriceX96,
         sqrtPriceAX96,
         sqrtPriceBX96,
-          96897559109753
+          "10860507277202"
       )
       console.log(amount0.toString())
       console.log(amount1.toString())
