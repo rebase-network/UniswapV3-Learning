@@ -28,6 +28,8 @@
     "@ethersproject/solidity": "^5.0.9",
     "@uniswap/sdk-core": "^3.0.0-alpha.3",
     "@uniswap/v3-periphery": "1.0.0",
+    "axios": "1.15.0",
+    "socket.io-client": "4.8.3",
     "tiny-invariant": "^1.1.0",
     "tiny-warning": "^1.0.3"
   },

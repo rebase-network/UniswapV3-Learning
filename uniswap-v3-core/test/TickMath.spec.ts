@@ -39,7 +39,6 @@ describe('TickMath', () => {
     it('max tick - 1', async () => {
       expect(await tickMath.getSqrtRatioAtTick(MAX_TICK - 1)).to.eq('1461373636630004318706518188784493106690254656249')
     })
-
     it('min tick ratio is less than js implementation', async () => {
       expect(await tickMath.getSqrtRatioAtTick(MIN_TICK)).to.be.lt(encodePriceSqrt(1, BigNumber.from(2).pow(127)))
     })
